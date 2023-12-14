@@ -1,58 +1,9 @@
-/******************************************************************
-Theme Name: Personal 
-Description: 
-Author: Colorlib
-Author URI: 
-Version: 1.0
-Created: 
-******************************************************************/
-/*------------------------------------------------------------------
 
-
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Table of contents]
-
-1.  Basic Styles
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Elements
-3.  Menu Style 
-4.  Home Page Style
-5.  About Page Style
-6.  Department Page Style
-7.  Blog Page Style
-8.  Contact Page Style
-9.  Footer Style
-
--------------------------------------------------------------------*/
-/* =================================== */
-/*  Font Family and Colors Styles
-/* =================================== */
-/*
-
-$primary-font	: 'Poppins', sans-serif;
----------------------------------------------
-
-$primary-color	: #8490ff;
-$title-color	: #222222;
-$text-color		: #777777;
-
-$white			: #fff;
-$offwhite		: #f9f9ff;
-$black			: #222;
-
-*/
-/* ADDED BY MARZIEH */
-/* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
   }
   
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     display: block;
@@ -63,23 +14,20 @@ $black			: #222;
     font-size: 17px;
   }
   
-  /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Add an active class to highlight the current page */
   .topnav a.active {
     background-color: #4CAF50;
     color: white;
   }
   
-  /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
   }
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -88,7 +36,6 @@ $black			: #222;
     }
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -103,13 +50,7 @@ $black			: #222;
     }
   }
   
-  
-  /********UNTIL HERE**********************/
-  /* =================================== */
-  /*  Basic Style 
-  /* =================================== */
   ::-moz-selection {
-    /* Code for Firefox */
     background-color: #8490ff;
     color: #fff;
   }
@@ -120,33 +61,28 @@ $black			: #222;
   }
   
   ::-webkit-input-placeholder {
-    /* WebKit, Blink, Edge */
     color: #777777;
     font-weight: 300;
   }
   
   :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
     color: #777777;
     opacity: 1;
     font-weight: 300;
   }
   
   ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
     color: #777777;
     opacity: 1;
     font-weight: 300;
   }
   
   :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
     color: #777777;
     font-weight: 300;
   }
   
   ::-ms-input-placeholder {
-    /* Microsoft Edge */
     color: #777777;
     font-weight: 300;
   }
@@ -205,10 +141,6 @@ $black			: #222;
     padding: 60px;
   }
   
-  /**
-   *  Typography
-   *
-   **/
   .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
     font-size: 1em;
     line-height: inherit;
@@ -266,15 +198,6 @@ $black			: #222;
     border-radius: 0px;
   }
   
-  /**
-   * For modern browsers
-   * 1. The space content is one way to avoid an Opera bug when the
-   *    contenteditable attribute is included anywhere else in the document.
-   *    Otherwise it causes space to appear at the top and bottom of elements
-   *    that are clearfixed.
-   * 2. The use of `table` rather than `block` is only necessary if using
-   *    `:before` to contain the top-margins of child elements.
-   */
   .clear::before, .clear::after {
     content: " ";
     display: table;
@@ -873,10 +796,6 @@ $black			: #222;
     margin-right: 0;
   }
   
-  /* =================================== */
-  /*  Elements Page Styles
-  /* =================================== */
-  /*---------- Start Elements Page -------------*/
   .whole-wrap {
     background-color: #f9f9ff;
   }
@@ -948,7 +867,6 @@ $black			: #222;
     margin: 0;
   }
   
-  /*---------- End Elements Page -------------*/
   .sample-text-area {
     background: #f9f9ff;
     padding: 100px 0 70px 0;
@@ -2094,12 +2012,6 @@ $black			: #222;
     right: 20px;
   }
   
-  /* =================================== */
-  /*  Menu Styles
-  /* =================================== */
-  /*--------------------------------------------------------------
-  # Header
-  --------------------------------------------------------------*/
   .main-menu {
     padding-bottom: 20px;
     padding-top: 20px;
@@ -2134,10 +2046,6 @@ $black			: #222;
     color: #8490ff !important;
   }
   
-  /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-  /* Nav Menu Essentials */
   .nav-menu, .nav-menu * {
     margin: 0;
     padding: 0;
@@ -2174,8 +2082,7 @@ $black			: #222;
   .nav-menu ul li {
     min-width: 180px;
   }
-  
-  /* Nav Menu Arrows */
+
   .sf-arrows .sf-with-ul {
     padding-right: 30px;
   }
@@ -2193,14 +2100,12 @@ $black			: #222;
     content: "\f105";
   }
   
-  /* Nav Meu Container */
   @media (max-width: 768px) {
     #nav-menu-container {
       display: none;
     }
   }
   
-  /* Nav Meu Styling */
   .nav-menu a {
     padding: 0 8px 0px 8px;
     text-decoration: none;
@@ -2249,7 +2154,6 @@ $black			: #222;
     margin-top: 0;
   }
   
-  /* Mobile Nav Toggle */
   #mobile-nav-toggle {
     position: fixed;
     right: 15px;
@@ -2278,7 +2182,6 @@ $black			: #222;
     }
   }
   
-  /* Mobile Nav Styling */
   #mobile-nav {
     position: fixed;
     top: 0;
@@ -2356,7 +2259,6 @@ $black			: #222;
     display: none;
   }
   
-  /* Mobile Nav body classes */
   body.mobile-nav-active {
     overflow: hidden;
   }
@@ -2369,9 +2271,6 @@ $black			: #222;
     color: #fff;
   }
   
-  /* =================================== */
-  /*  Homepage Styles
-  /* =================================== */
   .section-gap {
     padding: 120px 0;
   }
@@ -2497,7 +2396,6 @@ $black			: #222;
     margin-bottom: 10px;
   }
   
-  /*-------- Start Banner Area ------------*/
   .banner-area {
     background: #f9f9ff;
   }
@@ -2552,9 +2450,7 @@ $black			: #222;
       display: block;
     }
   }
-  
-  /*-------- End Banner Area ------------*/
-  /*-------- Start home-about Area ------------*/
+
   @media (max-width: 767px) {
     .home-about-right {
       margin-top: 30px;
@@ -2585,9 +2481,7 @@ $black			: #222;
   .home-about-right .primary-btn:hover {
     box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.3);
   }
-  
-  /*-------- End home-about Area ------------*/
-  /*--------- Start Services Area -------------*/
+
   .single-services {
     text-align: center;
     margin-top: 60px;
@@ -2621,9 +2515,7 @@ $black			: #222;
   .single-services:hover h4 {
     color: #8490ff;
   }
-  
-  /*--------- End Services Area -------------*/
-  /*--------- Start Facts Area -------------*/
+
   .single-fact {
     text-align: center;
   }
@@ -2641,9 +2533,7 @@ $black			: #222;
       margin-bottom: 30px;
     }
   }
-  
-  /*--------- End Facts Area -------------*/
-  /*--------- Start Portfolio Area -------------*/
+
   .portfolio-area .primary-btn {
     color: #fff;
     background-color: #8490ff;
@@ -2781,9 +2671,7 @@ $black			: #222;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
-  
-  /*--------- End Portfolio Area -------------*/
-  /*--------- start testimonial area  -------------*/
+
   .testimonial-area {
     background-color: #f9f9ff;
   }
@@ -2855,8 +2743,6 @@ $black			: #222;
     cursor: pointer;
   }
   
-  /*--------- end testimonial area  -------------*/
-  /*--------- Start price  Area -------------*/
   .price-area .single-price {
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -2957,9 +2843,7 @@ $black			: #222;
       margin: 10px;
     }
   }
-  
-  /*--------- end price  Area -------------*/
-  /*-------- start recent-blog Area -------------*/
+
   .recent-blog-area {
     background: #f9f9ff;
   }
@@ -3054,9 +2938,7 @@ $black			: #222;
     cursor: pointer;
     transform: scale(1.05);
   }
-  
-  /*-------- end recent-blog Area -------------*/
-  /*--------- start brand Area -------------*/
+
   .brands-area {
     padding: 80px 0;
   }
@@ -3087,9 +2969,7 @@ $black			: #222;
     filter: grayscale(0%);
     opacity: 1;
   }
-  
-  /*--------- end brand Area -------------*/
-  /*-------- Start Common Page Style   -------------*/
+
   .link-nav {
     margin-top: 10px;
     margin-bottom: 0px;
@@ -3122,16 +3002,11 @@ $black			: #222;
     margin: 0px 10px;
     font-weight: 600;
   }
-  
-  /*-------- End Common Page Style   -------------*/
-  /* =================================== */
-  /*  About Page Styles
-  /* =================================== */
+
   .aboutpage-feedback-area {
     background: #f9f9ff !important;
   }
-  
-  /*-------- Start Skillbar Style  -------------*/
+
   .single-skill p {
     margin-top: 30px;
     margin-bottom: 5px;
@@ -3148,8 +3023,7 @@ $black			: #222;
     height: 8px !important;
     border-radius: 12px;
   }
-  
-  /*--------  End Skillbar Style  -------------*/
+
   .timeline ul li {
     background: #f9f9ff;
     position: relative;
@@ -3221,10 +3095,7 @@ $black			: #222;
   .timeline ul li:nth-child(even) .content:before {
     right: -38px;
   }
-  
-  /* -------------------------
-     ----- Media Queries ----- 
-     ------------------------- */
+
   @media screen and (max-width: 1020px) {
     .timeline ul li .content {
       width: 41vw;
@@ -3251,10 +3122,7 @@ $black			: #222;
       left: -33px;
     }
   }
-  
-  /* =================================== */
-  /*  Pricing Page Styles
-  /* =================================== */
+
   .accordion > dt {
     margin-bottom: 10px;
     font-size: 14px;
@@ -3405,11 +3273,7 @@ $black			: #222;
   .accordion.time-line > dt > a.active {
     background: none !important;
   }
-  
-  /* =================================== */
-  /*  Blog Styles
-  /* =================================== */
-  /*============ Start Blog Home Styles  =============*/
+
   .blog-home-banner {
     background: url(../img/blog/blog-home-banner.jpg) bottom;
     background-size: cover;
@@ -3718,22 +3582,18 @@ $black			: #222;
   }
   
   .widget-wrap .search-widget ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
     color: #fff;
   }
   
   .widget-wrap .search-widget ::-moz-placeholder {
-    /* Firefox 19+ */
     color: #fff;
   }
   
   .widget-wrap .search-widget :-ms-input-placeholder {
-    /* IE 10+ */
     color: #fff;
   }
   
   .widget-wrap .search-widget :-moz-placeholder {
-    /* Firefox 18- */
     color: #fff;
   }
   
@@ -3923,25 +3783,21 @@ $black			: #222;
   }
   
   .widget-wrap .newsletter-widget ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
     font-size: 13px;
     color: #ccc;
   }
   
   .widget-wrap .newsletter-widget ::-moz-placeholder {
-    /* Firefox 19+ */
     font-size: 13px;
     color: #ccc;
   }
   
   .widget-wrap .newsletter-widget :-ms-input-placeholder {
-    /* IE 10+ */
     font-size: 13px;
     color: #ccc;
   }
   
   .widget-wrap .newsletter-widget :-moz-placeholder {
-    /* Firefox 18- */
     font-size: 13px;
     color: #ccc;
   }
@@ -3982,9 +3838,7 @@ $black			: #222;
     font-size: 12px;
     color: #222;
   }
-  
-  /*============ End Blog Home Styles  =============*/
-  /*============ Start Blog Single Styles  =============*/
+
   .single-post-area {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -4242,25 +4096,21 @@ $black			: #222;
   }
   
   .comment-form ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
     font-size: 13px;
     color: #777;
   }
   
   .comment-form ::-moz-placeholder {
-    /* Firefox 19+ */
     font-size: 13px;
     color: #777;
   }
   
   .comment-form :-ms-input-placeholder {
-    /* IE 10+ */
     font-size: 13px;
     color: #777;
   }
   
   .comment-form :-moz-placeholder {
-    /* Firefox 18- */
     font-size: 13px;
     color: #777;
   }
@@ -4277,11 +4127,7 @@ $black			: #222;
     border-color: #8490ff !important;
     color: #8490ff !important;
   }
-  
-  /*============ End Blog Single Styles  =============*/
-  /* =================================== */
-  /*  Contact Page Styles
-  /* =================================== */
+
   .contact-page-area {
     background: #f9f9ff;
   }
@@ -4367,10 +4213,7 @@ $black			: #222;
     color: #8490ff;
     margin-right: 30px;
   }
-  
-  /* =================================== */
-  /*  Footer Styles
-  /* =================================== */
+
   .footer-area {
     background-color: #04091e;
   }
@@ -4451,7 +4294,6 @@ $black			: #222;
   }
   
   .single-footer-widget ::-moz-selection {
-    /* Code for Firefox */
     background-color: #191919 !important;
     color: #777777;
   }
@@ -4462,33 +4304,28 @@ $black			: #222;
   }
   
   .single-footer-widget ::-webkit-input-placeholder {
-    /* WebKit, Blink, Edge */
     color: #777777;
     font-weight: 300;
   }
   
   .single-footer-widget :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
     color: #777777;
     opacity: 1;
     font-weight: 300;
   }
   
   .single-footer-widget ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
     color: #777777;
     opacity: 1;
     font-weight: 300;
   }
   
   .single-footer-widget :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
     color: #777777;
     font-weight: 300;
   }
   
   .single-footer-widget ::-ms-input-placeholder {
-    /* Microsoft Edge */
     color: #777777;
     font-weight: 300;
   }
@@ -4541,5 +4378,4 @@ $black			: #222;
   .footer-text a {
     color: #8490ff;
   }
-  
-  /*-------- end footer Area -------------*/
+
